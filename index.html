@@ -1,16 +1,146 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Trang web của Quang Minh 12A2 </title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <h1>Thông tin về Mink</h1>
-        <p><a href="lich.html">Lịch học thêm</a></p>
-        <p><a href="Monhocyeuthich.html">Môn học yêu thích</a></p>
-        <p><a href="duoi_hinh_bat_chu.html">Trò chơi đuổi hình bắt chữ</a></p>
-        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXCgBwE%3D">Bài nhạc yêu thích</a></p>
-        <img src="https://gocnhobecon.com/wp-content/uploads/2025/07/sticker-buon-2.webp" width="60%" height="500">
-    </body>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang web của Quang Minh 12A2</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f7f7f7;
+			margin: 0;
+			padding: 0;
+			color: #333;
+		}
 
+		header {
+			background-color: #4CAF50;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			font-size: 24px;
+		}
+
+		nav {
+			margin: 20px;
+			text-align: center;
+		}
+
+		nav a {
+			text-decoration: none;
+			font-size: 18px;
+			color: #007bff;
+			margin: 0 15px;
+			padding: 8px 16px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		nav a:hover {
+			background-color: #f1f1f1;
+			color: #4CAF50;
+		}
+
+		.content {
+			display: flex;
+			justify-content: center;
+			margin: 20px;
+		}
+
+		.content img {
+			width: 60%;
+			max-width: 600px;
+			height: auto;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		footer {
+			text-align: center;
+			padding: 10px;
+			background-color: #333;
+			color: white;
+		}
+
+		.social-media {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.social-media a {
+			text-decoration: none;
+			font-size: 18px;
+			color: #007bff;
+			margin: 0 15px;
+			padding: 8px 16px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+			display: none; /* Ban đầu ẩn các liên kết */
+		}
+
+		.social-media a:hover {
+			background-color: #f1f1f1;
+			color: #4CAF50;
+		}
+
+		.social-toggle {
+			cursor: pointer;
+			font-size: 20px;
+			color: #007bff;
+			padding: 10px;
+			display: inline-block;
+			transition: color 0.3s ease;
+		}
+
+		.social-toggle:hover {
+			color: #4CAF50;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Thông tin về Mink</h1>
+	</header>
+
+	<nav>
+		<p><a href="lich.html">Lịch học thêm</a></p>
+		<p><a href="Monhocyeuthich.html">Môn học yêu thích</a></p>
+		<p><a href="duoi_hinh_bat_chu.html">Trò chơi đuổi hình bắt chữ</a></p>
+		<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXCgBwE%3D">Bài nhạc yêu thích</a></p>
+	</nav>
+
+	<!-- Mục Mạng xã hội -->
+	<div class="social-media">
+		<span class="social-toggle">👉 Mạng xã hội</span>
+		<div class="social-links">
+			<p><a href="https://www.facebook.com/nguyen.quang.mink.230814/">Facebook</a></p>
+			<p><a href="https://www.tiktok.com/@minkne2310">TikTok</a></p>
+		</div>
+	</div>
+
+	<div class="content">
+		<img src="https://gocnhobecon.com/wp-content/uploads/2025/07/sticker-buon-2.webp" alt="Sticker hình ảnh Mink">
+	</div>
+
+	<footer>
+		<p>Quang Minh 12A2 - Trang web cá nhân</p>
+	</footer>
+
+	<script>
+		// Lắng nghe sự kiện click vào mũi tên để ẩn/hiện các liên kết mạng xã hội
+		document.querySelector('.social-toggle').addEventListener('click', function() {
+			var links = document.querySelector('.social-links');
+			// Kiểm tra xem các liên kết đang hiển thị hay không
+			if (links.style.display === "none" || links.style.display === "") {
+				links.style.display = "block"; // Hiển thị các liên kết
+			} else {
+				links.style.display = "none"; // Ẩn các liên kết
+			}
+		});
+
+		// Đảm bảo các liên kết mạng xã hội ban đầu ẩn đi
+		document.querySelector('.social-links').style.display = 'none';
+	</script>
+</body>
 </html>
+ c
